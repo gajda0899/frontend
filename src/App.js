@@ -1,25 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import data from './data'
+import LineChart from './components/LineChart';
+import BarChart from './components/BarChart'
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <div className="grid-container">
+    <header className="row">
+        <div>
+            <a className="brand" href="/">PIGLET</a> 
+        </div>
+        <div>
+            <a href="/signin">Sign in</a>                
+        </div>
+        
+    </header>
+    
+    <main>
+   {/* <BarChart />
+        <LineChart />
+        */}
+    </main>
+
+    <footer className="row center">
+        Powerful Intelligent Sensorial System 
+    </footer>
+
+</div>
   );
 }
+
 
 export default App;
